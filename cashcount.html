@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash count</title>
+    <script src="count.js"></script>
+</head>
+<body>
+    <form>
+        <label for="">Nickles</label>
+        <input type="text" pattern="\d*" placeholder="count" data-coin="0.05" data-count="nickles" class="coins nickles" autocomplete="off">
+        <input type="text" placeholder="amount" data-coin="1" data-amount="nickles" class="amount nickles" autocomplete="off">
+        <br><label for="">Dimes</label>
+        <input type="text" pattern="\d*" placeholder="count" data-coin="0.10" data-count="dimes" class="coins dimes" autocomplete="off">
+        <input type="text" placeholder="amount" data-coin="1" data-amount="dimes" class="amount dimes" autocomplete="off">
+        <br><label for="">Quarters</label>
+        <input type="text" placeholder="count" data-coin="0.25" data-count="quarters" class="coins quarters" autocomplete="off">
+        <input type="text" placeholder="amount" data-coin="1" data-amount="quarters" class="amount quarters" autocomplete="off">
+        <br><br><label for="">20$ bills</label>
+        <input type="text" placeholder="count" data-coin="20" data-count="twenty" class="coins twenty" autocomplete="off">
+        <input type="text" placeholder="amount" data-coin="1" data-amount="twenty" class="amount twenty" autocomplete="off">
+        <br><input type="submit" id="count_cash" value="count">
+    </form>
+    <p id="result"></p>
+</body>
+</html>
